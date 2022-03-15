@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css"/>
+    
+    <script src="js/fabric_min.js"></script>
+    <script src="js/jscolor.js"></script>
+    <script src="js/jscolor.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class="custom-edit-panel">
+        <div class="container">
+            <div class="canvas-top"></div>
+            <div class="row">
+
+<!-- canvas created -->
+
+                <div class="canvas-panel">
+                    <canvas id="canvas"></canvas>
+                </div>
+
+<!-- canvas menu -->
+
+                <div class="canvas-menu">
+                    <div class="row menu-wraper-content">
+
+
+
+
+                        <div class="menu-content-display">
+
+<!-- display text input part -->
+
+                            <div class="displayContent active" id="text-box">
+                                <div class="content-top">
+                                    <p>Add Text Here</p>
+                                </div>
+                                <div class="content">
+                                    <input id="inputfield" type="text" placeholder="Write Something">
+                                <button id="textButton">Add To Design</button>
+                                </div>
+                            </div>
+
+<!-- display image input part -->
+
+
+                            <div class="displayContent" id="image-box">
+                                <div class="content-top">
+                                    <p>Add Image Here</p>
+                                </div>
+                                <div class="content" id="Imgcnt">
+                                    <p>CHOOSE A FILE TO UPLOAD</p>
+                                <input id="imageButton" type="file">
+                                </div>
+                            </div>
+
+<!-- display color item -->
+
+                            <div class="displayContent" id="color-box">
+                                <div class="content-top">
+                                    <p>Choose Color</p>
+                                </div>
+                                <div class="content">
+                                    <input value="#000000FF" id="colorbx" data-jscolor="{}">
+                                    <button id="textButton">Add To Design</button>
+                                </div>
+                            </div>
+
+<!-- display download item -->
+
+                            <div class="displayContent" id="download-box">
+                                <div class="content-top">
+                                    <p>Download from Here</p>
+                                </div>
+                                <div class="content">
+                                <button id="textButton" onclick="download()">Download</button>
+                                </div>
+                            </div>
+<!-- display delete item -->
+
+                            <div class="displayContent" id="delete-box">
+                                <div class="content-top">
+                                    <p>Choose Delete Option</p>
+                                </div>
+                                <div class="content">
+                                <button class="deletebtn" onclick="clearAll(canvas)">Delete All</button>
+                                <button class="deletebtn" onclick="deleteItem()">delete</button>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+<!-- button starts here -->
+
+                        <div class="menu-content-imgicon">
+                            <ul class="icon-items">
+
+<!-- text button -->
+
+                                <li class="icon-item" data-id="text-box">
+                                    <div class="icon-box" >
+                                        <i class="fa-solid fa-text-height"></i>
+                                        <p>Add Text</p>
+                                    </div>
+                                </li>
+
+<!-- image button -->
+
+                                <li class="icon-item" data-id="image-box">
+                                    <div class="icon-box" >
+                                    <i class="fa-solid fa-images"></i>
+                                    <p>Add Image</p></div>
+                                </li>
+
+<!-- color button -->
+
+                                <li class="icon-item" data-id="color-box" >
+                                    <div class="icon-box">
+                                        <i class="fa-solid fa-palette"></i>
+                                        <p>Add Color</p>
+                                    </div>
+                                </li>
+
+<!-- download button -->
+
+                                <li class="icon-item" data-id="download-box">
+                                    <div class="icon-box" >
+                                        <i class="fa-solid fa-download"></i>
+                                        <p>Download</p>
+                                    </div>
+                                </li>
+
+<!-- clear button -->
+
+                                <li class="icon-item" data-id="delete-box">
+                                    <div class="icon-box">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                        <p>Clear</p>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="js/app.js"></script>
+<script src="js/func.js"></script>
+</html>

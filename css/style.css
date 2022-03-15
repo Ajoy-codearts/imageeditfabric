@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.custom-edit-panel .container .canvas-top {
+  width: 100%;
+  height: 50px;
+  background-color: #373841;
+}
+
+.custom-edit-panel .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.custom-edit-panel .container .row .canvas-panel {
+  width: 65%;
+  background-color: #d8d8d8;
+}
+
+.custom-edit-panel .container .row .canvas-menu {
+  width: 35%;
+  background-color: #d8d8d8;
+  position: relative;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  position: absolute;
+  top: 43px;
+  right: 30px;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display {
+  width: 75%;
+  position: relative;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content-top {
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 10px 0;
+  background-color: #f6f6f6;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content-top p {
+  margin: 0;
+  font-family: poppins;
+  color: #4a4a4a;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content input#inputfield {
+  width: 90%;
+  margin-left: 1rem;
+  padding: 17px 3px 17px 3px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 3px;
+  border: 1px solid #b7b7b7;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content button#textButton {
+  padding: 17px 21px 17px 22px;
+  margin: 25px 1px 0 119px;
+  font-size: 16px;
+  border-radius: 7px;
+  border: none;
+  background: blue;
+  color: #fff;
+  font-family: poppins;
+  cursor: pointer;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content input#imageButton {
+  padding: 9px 0px 19px 0;
+  font-size: 17px;
+  width: 100%;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content .deletebtn {
+  cursor: pointer;
+  background: blue;
+  color: #fff;
+  padding: 15px 38px 15px 38px;
+  margin-bottom: 13px;
+  display: block;
+  border: none;
+  border-radius: 4px;
+  font-size: 19px;
+  font-family: 'Poppins';
+  margin-left: 20px;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content #colorbx {
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin-left: 60px;
+  padding: 5px 0;
+  border-style: dashed;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent #Imgcnt {
+  width: 80%;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid gray;
+  border-style: dashed;
+  margin-left: 2rem;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent #Imgcnt p {
+  margin: 0;
+  padding: 11px 0;
+  text-align: center;
+  font-family: poppins;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent #Imgcnt button {
+  margin: 19px 1px 16px 84px;
+  padding: 14px 36px 14px 36px;
+  font-size: 18px;
+  color: white;
+  background: blue;
+  border: none;
+  border-radius: 7px;
+  font-family: poppins;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-imgicon {
+  width: 25%;
+  background-color: #333333;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-imgicon .icon-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-imgicon .icon-items .icon-item {
+  cursor: pointer;
+  width: 73px;
+  height: 61px;
+  margin: 18px 7px 13px 14px;
+  display: block;
+  padding: 0;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-imgicon .icon-items .icon-item .icon-box {
+  text-align: center;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-imgicon .icon-items .icon-item .icon-box i {
+  font-size: 28px;
+  padding: 7px;
+  color: #fff;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-imgicon .icon-items .icon-item .icon-box p {
+  margin: 0;
+  color: #fff;
+  font-family: poppins;
+  font-size: 11px;
+}
+/*# sourceMappingURL=style.css.map */
