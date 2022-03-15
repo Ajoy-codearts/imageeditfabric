@@ -37,14 +37,28 @@ getText=()=>{
 getText();
 //declairing text
 document.getElementById('textButton').addEventListener('click',function(){
-    canvas.add(new fabric.IText(input,{
+    canvas.add(new fabric.Text(input,{
         fontFamily: 'arial black',
         top:100,
         left:50,
+        fontSize:fsize,
         fill:color
     }))
     
 })
+//resizing text
+var fsize=10;
+document.getElementById('fontSize').addEventListener('change',(event)=>{
+    fsize = event.target.value;
+})
+//resize button
+// document.getElementById('resize').addEventListener('click', function(){
+//     var obj = canvas.getActiveObject();
+//     obj.set({
+//         fontSize:fsize;
+//     })
+// })
+
 
 
 //color

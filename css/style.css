@@ -68,6 +68,55 @@ body {
   color: #4a4a4a;
 }
 
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content .content-size {
+  padding: 15px 0;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content .content-size label {
+  margin-left: 19px;
+  font-family: poppins;
+  color: #6c6c6c;
+  font-size: 16px;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content .content-size select {
+  color: #6c6c6c;
+  font-family: poppins;
+  font-size: 16px;
+  border: 1px solid #b7b7b7;
+  border-radius: 3px;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content .content-size button {
+  background: #2525f5;
+  color: #fff;
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 15px;
+  margin-left: 68px;
+  cursor: pointer;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content .content-family {
+  padding: 9px 0;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content .content-family label {
+  margin-left: 19px;
+  font-family: poppins;
+  color: #6c6c6c;
+  font-size: 16px;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content .content-family select {
+  color: #6c6c6c;
+  font-family: poppins;
+  font-size: 16px;
+  border: 1px solid #b7b7b7;
+  border-radius: 3px;
+}
+
 .custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content input#inputfield {
   width: 90%;
   margin-left: 1rem;
@@ -94,6 +143,7 @@ body {
   padding: 9px 0px 19px 0;
   font-size: 17px;
   width: 100%;
+  color: #6c6c6c;
 }
 
 .custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content .deletebtn {
