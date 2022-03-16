@@ -47,7 +47,7 @@
                                         <label for="fontSize">Font Size</label>
                                         <select name="size" id="fontSize">
                                             <option value="10">10</option>
-                                            <option value="20">20</option>
+                                            <option selected value="20">20</option>
                                             <option value="30">30</option>
                                             <option value="40">40</option>
                                             <option value="50">50</option>
@@ -62,8 +62,15 @@
                                     <div class="content-family">
                                         <label for="fontFamily">Font Family</label>
                                         <select name="family" id="fontFamily">
-                                            <option value="arial">Arial</option>
+                                            <option id="op1" value="Times New Roman">Times New Roman</option>
+                                            <option id="op2" selected value="Arial">Arial</option>
+                                            <option id="op3" value="Lucida Console">Lucida Console</option>
+                                            <option id="op4" value="Brush Script MT">Brush Script MT</option>
+                                            <option id="op5" value="Lucida Handwriting">Lucida Handwriting</option>
+                                            <option id="op6" value="Copperplate">Copperplate</option>
+                                            <option id="op7" value="Papyrus">Papyrus</option>
                                         </select>
+                                        <button id="changeFamily">Font Family</button>
                                     </div>
                                     
                                     <button id="textButton">Add To Design</button>
@@ -91,7 +98,8 @@
                                 </div>
                                 <div class="content">
                                     <input value="#000000FF" id="colorbx" data-jscolor="{}">
-                                    <button id="textButton">Add To Design</button>
+                                    <button id="changeColor">Give Color</button>
+                                    <button id="colorButton">Add To Design</button>
                                 </div>
                             </div>
 

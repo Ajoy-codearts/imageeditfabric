@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: roboto;
+  src: url(../fonts/roboto/Roboto-Black.ttf), url(../fonts/roboto/Roboto-BlackItalic.ttf), url(../fonts/roboto/Roboto-Bold.ttf), url(../fonts/roboto/Roboto-BoldItalic.ttf), url(../fonts/roboto/Roboto-Italic.ttf), url(../fonts/roboto/Roboto-Light.ttf), url(../fonts/roboto/Roboto-LightItalic.ttf), url(../fonts/roboto/Roboto-Medium.ttf), url(../fonts/roboto/Roboto-MediumItalic.ttf), url(../fonts/roboto/Roboto-Regular.ttf), url(../fonts/roboto/Roboto-Thin.ttf);
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -76,26 +81,35 @@ body {
   margin-left: 19px;
   font-family: poppins;
   color: #6c6c6c;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content .content-size select {
   color: #6c6c6c;
   font-family: poppins;
-  font-size: 16px;
+  font-size: 14px;
   border: 1px solid #b7b7b7;
   border-radius: 3px;
 }
 
 .custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content .content-size button {
-  background: #2525f5;
+  background: #6161fd;
   color: #fff;
   border: none;
   padding: 5px;
   border-radius: 4px;
-  font-size: 15px;
-  margin-left: 68px;
+  font-size: 13px;
+  margin-left: 92px;
   cursor: pointer;
+  font-family: poppins;
+  font-weight: 400;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content .content-size button:hover {
+  cursor: pointer;
+  background: #00009d !important;
+  -webkit-box-shadow: 1px 1px 7px 1px grey;
+          box-shadow: 1px 1px 7px 1px grey;
 }
 
 .custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content .content-family {
@@ -106,15 +120,43 @@ body {
   margin-left: 19px;
   font-family: poppins;
   color: #6c6c6c;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content .content-family select {
   color: #6c6c6c;
   font-family: poppins;
-  font-size: 16px;
+  font-size: 14px;
   border: 1px solid #b7b7b7;
   border-radius: 3px;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content .content-family #fontFamily #op1 {
+  font-family: 'Times New Roman';
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content .content-family #fontFamily #op2 {
+  font-family: 'Arial';
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content .content-family #fontFamily #op3 {
+  font-family: 'Lucida Console';
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content .content-family #fontFamily #op4 {
+  font-family: 'Brush Script MT';
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content .content-family #fontFamily #op5 {
+  font-family: 'Lucida Handwriting';
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content .content-family #fontFamily #op6 {
+  font-family: 'Copperplate';
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content .content-family #fontFamily #op7 {
+  font-family: 'Papyrus';
 }
 
 .custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content input#inputfield {
@@ -129,14 +171,22 @@ body {
 
 .custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content button#textButton {
   padding: 17px 21px 17px 22px;
-  margin: 25px 1px 0 119px;
+  margin: 42px 1px 0 127px;
   font-size: 16px;
   border-radius: 7px;
   border: none;
-  background: blue;
+  background: #5e5ef9;
   color: #fff;
   font-family: poppins;
   cursor: pointer;
+  font-weight: 400;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content #textButton:hover {
+  cursor: pointer;
+  background: #00009d !important;
+  -webkit-box-shadow: 1px 1px 7px 1px grey;
+          box-shadow: 1px 1px 7px 1px grey;
 }
 
 .custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content input#imageButton {
@@ -148,7 +198,7 @@ body {
 
 .custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content .deletebtn {
   cursor: pointer;
-  background: blue;
+  background: #5e5ef9;
   color: #fff;
   padding: 15px 38px 15px 38px;
   margin-bottom: 13px;
@@ -160,12 +210,74 @@ body {
   margin-left: 20px;
 }
 
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content .deletebtn:hover {
+  cursor: pointer;
+  background: #00009d !important;
+  -webkit-box-shadow: 1px 1px 7px 1px grey;
+          box-shadow: 1px 1px 7px 1px grey;
+}
+
 .custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content #colorbx {
   border: 1px solid gray;
   border-radius: 4px;
   margin-left: 60px;
   padding: 5px 0;
   border-style: dashed;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content #changeColor {
+  margin: 33px 0px 0px 192px;
+  background-color: #5e5ef9;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 5px 3px 5px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content #changeColor:hover {
+  cursor: pointer;
+  background: #00009d !important;
+  -webkit-box-shadow: 1px 1px 7px 1px grey;
+          box-shadow: 1px 1px 7px 1px grey;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content #colorButton {
+  margin: 33px 0px 0px 167px;
+  background-color: #5e5ef9;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 5px 3px 5px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content button#colorButton:hover {
+  cursor: pointer;
+  background: #00009d !important;
+  -webkit-box-shadow: 1px 1px 7px 1px grey;
+          box-shadow: 1px 1px 7px 1px grey;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content #changeFamily {
+  margin: 12px 0 0 194px;
+  background: #6161f7;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 4px 5px 4px;
+  font-size: 13px;
+  font-family: poppins;
+  font-weight: 500;
+}
+
+.custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent .content button#changeFamily:hover {
+  cursor: pointer;
+  background: #00009d !important;
+  -webkit-box-shadow: 1px 1px 7px 1px grey;
+          box-shadow: 1px 1px 7px 1px grey;
 }
 
 .custom-edit-panel .container .row .canvas-menu .menu-wraper-content .menu-content-display .displayContent #Imgcnt {

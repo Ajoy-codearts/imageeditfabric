@@ -1,4 +1,3 @@
-
 //canvas
 var canvas = new fabric.Canvas('canvas',{
     width: 900,
@@ -38,27 +37,52 @@ getText();
 //declairing text
 document.getElementById('textButton').addEventListener('click',function(){
     canvas.add(new fabric.Text(input,{
-        fontFamily: 'arial black',
         top:100,
         left:50,
         fontSize:fsize,
+        fontFamily:fFamily,
         fill:color
-    }))
+    }));
     
 })
-//resizing text
-var fsize=10;
+//setting text size custom
+var fsize=20;
 document.getElementById('fontSize').addEventListener('change',(event)=>{
     fsize = event.target.value;
 })
-//resize button
-// document.getElementById('resize').addEventListener('click', function(){
-//     var obj = canvas.getActiveObject();
-//     obj.set({
-//         fontSize:fsize;
-//     })
-// })
 
+
+
+//setting font family
+var fFamily='Arial';
+document.getElementById('fontFamily').addEventListener('change',(event)=>{
+    fFamily = event.target.value;
+})
+
+
+
+//resize button (selected object)
+document.getElementById('resize').addEventListener('click', function(){
+    var obj = canvas.getActiveObject();
+    obj.fontSize=fsize;
+    canvas.renderAll();
+})
+
+
+//coloring selected text object
+document.getElementById('changeColor').addEventListener('click',function(){
+    var obj1 =canvas.getActiveObject();
+    obj1.fill=color;
+    canvas.renderAll();
+})
+
+
+//changing font family
+document.getElementById('changeFamily').addEventListener('click',function(){
+    var obj2=canvas.getActiveObject();
+    obj2.fontFamily = fFamily;
+    canvas.renderAll();
+})
 
 
 //color
@@ -70,6 +94,10 @@ colorPicker=()=>{
     })
 }
 colorPicker();
+
+
+
+
 
 
 //download
